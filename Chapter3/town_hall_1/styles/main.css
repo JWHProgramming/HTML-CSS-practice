@@ -8,10 +8,46 @@ body {
 header img {
 	float: left;
 }
+header .shadow{
+	text-shadow: 2px 2px 2px blue;
+	color:#800000;
+}
+
+header h2{
+	font-size: 170%;
+	color: #800000;
+	text-indent: 30px;
+}
+
+header h3{
+	font-size: 130%;
+	font-style: italic;
+	text-indent: 30px;
+}
 
 /* the styles for the section */
 main {
 	clear: left;
 }
 
+main h1{
+	font-size: 150%;
+}
+
+main h2{
+	font-size: 130%;
+	color: #800000;
+}
+
+main h3{
+	font-size: 105%;
+}
+
+a:hover, a:focus{
+	font-style: italic;
+}
+
 /* the styles for the footer */
+footer p {
+	text-align: center;
+}
