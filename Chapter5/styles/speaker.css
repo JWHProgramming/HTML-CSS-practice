@@ -44,20 +44,21 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the navigation menu */
-#nav_menu ul {
+#nav_menu  {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
-#nav_menu ul li {
+#nav_menu li {
 	float: left;
+	
 }
-#nav_menu ul li a {
+#nav_menu li a {
     display: block;
-    width: 120px;
     text-align: center;
-    padding: 1em 0;
+	padding: 1em 0;
+	width:160px;
     text-decoration: none;
     background-color: #800000;
     color: white;
@@ -66,16 +67,18 @@ header img {
 #nav_menu a.current {
 	color: yellow;
 }
-#nav_menu ul ul {
+#nav_menu li ul {
     display: none;
-    position: absolute;
-    top: 100%;
+	position: absolute;
+	list-style-type: none;
+    top: 100;
 }
-#nav_menu ul ul li {
+#nav_menu ul li {
 	float: none;
 }
-#nav_menu ul li:hover > ul {
+#nav_menu li:hover > ul {
 	display: block;
+
 }
 #nav_menu > ul::after {
     content: "";
