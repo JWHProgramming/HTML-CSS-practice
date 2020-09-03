@@ -10,7 +10,8 @@ html{
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	width:800px;
+	width:90%;
+	max-width:960px;
 	margin:0 auto;
 	border:3px solid #931420;
 	background-color:#fffded;
@@ -37,7 +38,7 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0 3.125%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -48,16 +49,18 @@ header img {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	width:100%;
 }
+
 #nav_menu li {
 	float: left;
-	
+	width:20%;
 }
 #nav_menu li a {
     display: block;
     text-align: center;
 	padding: 1em 0;
-	width: 160px;
+	width: 100%;
     text-decoration: none;
     background-color: #800000;
     color: white;
@@ -71,9 +74,11 @@ header img {
 	list-style-type: none;
 	position: absolute;
 	top: 100;
+	width:100%;
 }
 #nav_menu ul li {
 	float: none;
+	
 }
 #nav_menu li:hover > ul{
 	display: block;
@@ -86,6 +91,7 @@ header img {
 /* the styles for the main content */
 main {
 	clear: left;
+	width:100%;
 }
 main h1{
 	
@@ -110,7 +116,7 @@ main p{
 }
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 54.6875%;
 	float: right;
 	padding: 0 0 20px 0;
 }
@@ -160,13 +166,15 @@ article img {
 	margin: .5em 1em 1em 1em;
 	border: 1px solid black;
 	padding-bottom:0 !important;
+	max-width: 40%;
+	min-width:150px;
 }
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 42.3125%;
 	float: right;
-	padding: 0 0 20px 20px;
+	padding: 0 0 2.0833% 2.0833%;
 }
 aside h2 {
 	color: #800000;
@@ -191,4 +199,25 @@ footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
+}
+
+/* Media Queries */
+/* Tablet mode portrait view */
+@media only screen and (max-width:959px){
+	section h1{
+		font-size: 135%;
+	}
+	section h2, aside h2{
+		font-size: 120%;
+	}
+}
+
+/* Phone in landscape mode */
+@media only screen and (max-width:767px){
+	header img{
+		float:none;
+	}
+	header {
+		text-align: center;
+	}
 }
