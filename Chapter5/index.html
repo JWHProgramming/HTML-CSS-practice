@@ -6,6 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#nav_menu").slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+	<link rel="stylesheet" href="styles/slicknav.scss">
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
@@ -16,6 +24,7 @@
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
+	<ul id="mobile_menu"></ul>
 	<ul id="nav_menu">
 		<li>
 			<a href="index.html" class="current">Home</a>
@@ -84,14 +93,16 @@
 		</section>
 		<aside>
 			<h2>Guest speakers</h2>
-			<h3>October<br><a href="speakers/toobin.html">Jeffrey Toobin</a></h3>
-			<img src="images/toobin75.jpg" alt="Jeffrey Toobin photo">
-			<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
-			<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
-			<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
-			<img src="images/chua75.jpg" alt="Amy Chua photo">
-			<h3>February<br><a href="speakers/c7_sampson.html">Scott Sampson</a></h3>
-			<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+			<div>
+				<h3>October<br><a href="speakers/toobin.html">Jeffrey Toobin</a></h3>
+				<img src="images/toobin75.jpg" alt="Jeffrey Toobin photo">
+				<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+				<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+				<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
+				<img src="images/chua75.jpg" alt="Amy Chua photo">
+				<h3>February<br><a href="speakers/c7_sampson.html">Scott Sampson</a></h3>
+				<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+		</div>
 		</aside>
 	</main>
 	<footer>
