@@ -1,35 +1,33 @@
 /* the styles for the elements */
-* {
-	margin: 0;
-	padding: 0;
+*{
+	margin:0;
+	padding:0;
 }
-html {
-	background-color: white;
+
+html{
+	background-color:white;
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+	font-size: 100%;
+	width:800px;
+	margin:0 auto;
+	border:3px solid #931420;
+	background-color:#fffded;
+    
 }
 a:focus, a:hover {
 	font-style: italic;
 }
 /* the styles for the header */
 header {
-	padding: 1.5em 0 2em 0;
-	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
-	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
+border-bottom: 3px solid #931420;
+padding-top: 1.5em;
+padding-bottom:2em;
+background-image:-webkit-linear-gradient(30deg,#f6bb73 0%,#f6bb73 30%, white 50%,#f6bb73 80%, #f6bb73 100%);
+	
 }
+
 header h2 {
 	font-size: 175%;
 	color: #800000;
@@ -46,20 +44,21 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the navigation menu */
-#nav_menu ul {
+#nav_menu  {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: relative;
 }
-#nav_menu ul li {
+#nav_menu li {
 	float: left;
+	
 }
-#nav_menu ul li a {
+#nav_menu li a {
     display: block;
-    width: 160px;
     text-align: center;
-    padding: 1em 0;
+	padding: 1em 0;
+	width:160px;
     text-decoration: none;
     background-color: #800000;
     color: white;
@@ -68,16 +67,18 @@ header img {
 #nav_menu a.current {
 	color: yellow;
 }
-#nav_menu ul ul {
+#nav_menu li ul {
     display: none;
-    position: absolute;
-    top: 100%;
+	position: absolute;
+	list-style-type: none;
+    top: 100;
 }
-#nav_menu ul ul li {
+#nav_menu ul li {
 	float: none;
 }
-#nav_menu ul li:hover > ul {
+#nav_menu li:hover > ul {
 	display: block;
+
 }
 #nav_menu > ul::after {
     content: "";
@@ -88,46 +89,66 @@ header img {
 main {
 	clear: left;
 }
-
+main h1{
+	
+	padding-top:.5em;
+	padding-bottom:.25em;
+	font-size: 150%;
+	margin:0 0 0 0;
+}
+main h2{
+	padding-top:.5em;
+	padding-bottom:.25em;
+}
+main h3{
+	padding-bottom:.25em;
+}
+main img{
+	padding-bottom:1em;
+}
+main p{
+	padding-bottom:.5em;
+}
 /* the styles for the section */
 section {
 	width: 525px;
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 0 20px 0;
 }
 section h1 {
 	font-size: 150%;
-	padding: .5em 0 .25em 0;
+	color:#800000;
 	margin: 0;
 }
 section h2 {
 	color: #800000;
 	font-size: 130%;
-	padding: .5em 0 .25em 0;
+	
 }
-section p {
-	padding-bottom: .5em;
-}
+
 section blockquote {
-	padding: 0 2em;
+	padding-right:2em;
+	padding-left:2em;
 	font-style: italic;
+	
 }
 section ul {
-	padding: 0 0 .25em 1.25em;
+	
 	list-style-type: circle;
+	padding-bottom:.25em;
+	padding-left:1.25em;
 }
 section li {
-	padding-bottom: .35em;
+	padding-bottom:.35em;
 }
 
 /* the styles for the article */
 article {
 	padding: .5em 0;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
 }
 article h2 {
 	padding-top: 0;
+	color:black;
 }
 article h3 {
 	font-size: 105%;
@@ -135,8 +156,9 @@ article h3 {
 }
 article img {
 	float: right;
-	margin: .5em 0 1em 1em;
+	margin: .5em 1em 1em 1em;
 	border: 1px solid black;
+	padding-bottom:0 !important;
 }
 
 /* the styles for the aside */
@@ -153,25 +175,15 @@ aside h2 {
 
 aside h3 {
 	font-size: 105%;
-	padding-bottom: .25em;
+	
 }
 
-figure{
-	float:right;
-	padding-bottom:1em;
-}
-figcaption{
-	display: block;
-	font-weight: bold;
-	padding-top: .25em;
-	margin-bottom: 1em;
-	border-bottom: 1px solid black;
-}
 
 /* the styles for the footer */
 footer {
-	background-color: #931420;
+	
 	clear: both;
+	background-color:#931420;
 
 }
 footer p {
