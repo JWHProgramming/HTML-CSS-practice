@@ -47,12 +47,12 @@ header img {
 }
 /* the styles for the form */
 fieldset {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-top: .5em;
+    margin-top: 0;
+    margin-bottom: .5em;
+	padding: .5em 1em;
 }
 legend {
-    color: #931420;
+    color: black;
     font-weight: bold;
     font-size: 85%;
     margin-bottom: .5em;
@@ -71,13 +71,14 @@ input, select {
     margin-bottom: .5em;
 }
 input:required, input[required] {
-	border: 3px solid red;
+	border: 2px solid #800000;
 }
 input:valid {
 	border: 1px solid black;
 }
 input:invalid {
 	box-shadow: none;
+	border:2px solid #800000;
 }
 br {
     clear: both;
@@ -128,6 +129,23 @@ br {
 /* the styles for the main content */
 main {
 	clear: left;
+}
+
+#payments label{
+	float: none;
+}
+
+#bill_me, #credit_card{
+	width: auto;
+	margin-left: 3em;
+}
+
+#month {
+	width:7em;
+}
+
+#year{
+	width: 5em;
 }
 
 /* the styles for the section */
