@@ -166,6 +166,17 @@ article h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
+article img{
+	transition: 3s;
+	-webkit-transition: 3s;
+}
+article img:hover{
+	transform: rotate(720deg);
+	-webkit-transform: rotate(720deg);
+	transform-origin: top left;
+	-webkit-transform: top left;
+
+}
 article img {
 	float: right;
 	margin: .5em 1em 1em 1em;
@@ -200,6 +211,30 @@ aside h2 {
 aside h3 {
 	font-size: 105%;
 	
+}
+aside img {
+	animation: bonus 3s 1s 4 alternate-reverse;
+}
+@keyframes bonus{
+	from{
+		margin-left: 0%;
+		margin-top: 0%;
+		transform: scale(100%, 200px);
+	}
+	to{
+		margin-left:10%;
+		margin-top:5%;
+		transform: scale(1.4, 1.4);
+	}
+}
+aside img{
+	transition-property: margin 2s ease;
+	-webkit-transition: margin 2s ease;
+	transition: margin 2s ease;
+	-webkit-transition:margin 2s ease;
+}
+aside img:hover{
+	margin:50px 0 0 100px;
 }
 
 
