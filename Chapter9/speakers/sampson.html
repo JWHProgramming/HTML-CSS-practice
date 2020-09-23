@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="../images/favicon.ico">
 	<link rel="stylesheet" href="../styles/normalize.css">
 	<link rel="stylesheet" href="../styles/speaker.css">
+	<script src="../js/print.js"></script>
 </head>
 
 <body>
@@ -65,6 +66,7 @@
 		</section>
 		
 		<aside>
+			<input type="button" id="printButton" value="Print The Page">
 			<h2>Guest speakers</h2>
 			<h3>October<br><a href="../speakers/toobin.html">Jeffrey Toobin</a></h3>
 			<img src="../images/toobin75.jpg" alt="Jeffrey Toobin photo">
@@ -77,8 +79,14 @@
 			<h3><a href="../index.html">Return to Home Page</a></h3>
 		</aside>
 	</main>
-	<footer>
-		<p>&copy; 2015, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	<footer><p>
+		<script type="text/javascript">
+				var today = new Date();
+				document.write("&copy;&nbsp;");
+				document.write(today.getFullYear());
+				document.write(", San Joaquin Valley Town Hall");
+		</script>
+		</p>
 	</footer>
 </body>
 </html>
