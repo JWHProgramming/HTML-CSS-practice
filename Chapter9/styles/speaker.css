@@ -178,6 +178,30 @@ aside h3 {
 	
 }
 
+ /* ul li a{
+	 float:left;
+} */
+ul li {
+	
+	display:inline;
+	
+}
+ul li a img{
+	width:50px;
+	height:40px;
+}
+
+#accordion div{
+	overflow:hidden;
+	height:0;
+	transition:height 2s ease-in-out;
+	-webkit-transition: height 2s ease-in-out;
+}
+
+#accordion div:target{
+	height:120px;
+}
+
 
 /* the styles for the footer */
 footer {
