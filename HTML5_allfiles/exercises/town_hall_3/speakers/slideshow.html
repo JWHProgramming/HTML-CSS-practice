@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>San Joaquin Valley Town Hall</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/speakers_pages.css">
+	<!-- JavaScript and jQuery requirements -->
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+	<!-- <script src="../javascript/cylce2shuffle.js"></script> -->
+</head>
+
+<body>
+	<header>
+		<img src="../images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+		<hgroup>
+			<h1>San Joaquin Valley Town Hall</h1>
+			<h2>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h2>
+		</hgroup>
+	</header>
+	<nav>
+    	<ul>
+    		<li><a href="../index.html">Home</a></li>
+    		<li><a class="current" href="image_swaps.html">Speakers</a></li>
+    		<li><a href="../luncheons.html">Luncheons</a></li>
+    		<li><a href="../tickets.html">Tickets</a></li>
+    		<li><a href="about.html">About Us</a></li>
+    	</ul>
+    </nav>
+	<section>
+		<h1>jQuery Slide Show</h1>
+		<div class="cycle-slideshow" 
+			 data-cycle-fx="scrollHorz"
+			 data-cycle-timeout="2000"
+			 data-cycle-caption="#adv-custom-caption"
+			 data-cycle-caption-template="Slide {{slideNum}}:{{cycleTitle}}"
+			 data-cycle-pause-on-hover="true"
+			 data-cycle-random="true">
+		<img src="../images/toobin_court.jpg" alt="Jeffrey Toobin" data-cycle-title="Jefrey Toobin">
+        <img src="../images/sorkin_desk260.jpg" alt="Andrew Ross Sorkin" data-cycle-title="Andrew Ross Sorkin">
+        <img src="../images/chua_220.jpg" alt="Amy Chua" data-cycle-title="Amy Chua">
+		<img src="../images/sampson_dinosaur.jpg" alt="Scott Sampson" data-cycle-title="Scott Sampson">
+		<div id="adv-custom-caption"></div>
+	</div>
+    </section>
+	<aside>
+		<h1 id="speakers">Applications</h1>
+		<h2>JavaScript</h2>
+		<p><a href="image_swaps.html">Image Swaps</a></p>
+		<p><a href="image_rollovers.html">Image Rollovers</a></p>
+		<h2>jQuery</h2>
+		<p><a href="carousel.html">jQuery Carousel</a></p>
+		<p><a href="slideshow.html">jQuery Slide Show</a></p>
+		<p><a href="accordion.html">jQuery Accordion</a></p>
+		<h2>HTML5 and CSS3</h2>
+		<p><a href="geolocation.html">Fonts, Geolocation, and Storage</a></p>
+		<p><a href="canvas.html">Canvas</a></p>
+		
+	</aside>
+	<footer>
+		<p>&copy; 2012, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+	</footer>
+</body>
+</html>
